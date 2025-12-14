@@ -96,7 +96,7 @@ p {
   max-width: 800px;
 }
 
-/* ===== INFO BOX ===== */
+/* ===== INFO  ===== */
 .info-box {
   background: #ffffff;
   border-radius: 12px;
@@ -137,5 +137,83 @@ footer {
 
   .brand img {
     width: 60px;
+  }
+
+
+/* ===== KONTAKTI ===== */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.contact-info {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.contact-info h3 {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0;
+  color: #003a63;
+}
+
+.form-box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.form-box h3 {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0;
+  color: #003a63;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-family: "Inter", sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #004b7f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #003a63;
+}
+
+.small {
+  font-size: 13px;
+  color: #666;
+  margin-top: 15px;
+}
+
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
   }
 }
