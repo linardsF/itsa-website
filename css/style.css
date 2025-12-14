@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 
-/* ===== BODY ===== */
+/* BODY */
 body {
   margin: 0;
   font-family: "Inter", system-ui, sans-serif;
@@ -12,17 +12,16 @@ body {
   line-height: 1.7;
 }
 
-/* ===== HEADER ===== */
+/* HEADER  */
 header {
   background: #ffffff;
-  border-bottom: 5px solid #004b7f;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border-bottom: 4px solid #4f6bdc;
 }
 
 .header-inner {
   max-width: 1100px;
   margin: auto;
-  padding: 22px 20px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,20 +30,18 @@ header {
 .brand {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 15px;
 }
 
 .brand img {
-  width: 72px;
-  height: auto;
+  width: 70px;
 }
 
 .brand h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   margin: 0;
-  color: #003a63;
-  letter-spacing: 0.3px;
+  color: #2b3a67;
 }
 
 .brand p {
@@ -53,30 +50,158 @@ header {
   color: #555;
 }
 
-
+/* NAV  */
 nav a {
-  margin-left: 22px;
+  margin-left: 18px;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
   font-size: 14px;
-  color: #004b7f;
-  position: relative;
+  font-weight: 600;
+  color: #4f6bdc;
 }
 
-nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0;
-  height: 2px;
-  background: #004b7f;
-  transition: width 0.2s ease;
+nav a:hover {
+  text-decoration: underline;
 }
 
-nav a:hover::after {
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  color: #2b3a67;
+  margin-top: 0;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #2b3a67;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* ===== CONTACT GRID ===== */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+/* KONTAKTU INFO */
+.contact-info {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+/* ===== FORM ===== */
+.form-box {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.form-box h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+form input,
+form textarea {
   width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
 }
 
+form textarea {
+  resize: vertical;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #4f6bdc;
+}
+
+
+form button {
+  margin-top: 20px;
+  padding: 10px 18px;
+  background: #4f6bdc;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #3f5bcc;
+}
+
+
+.small {
+  font-size: 12px;
+  color: #666;
+  margin-top: 12px;
+}
+
+/*  FOOTER  */
+footer {
+  background: #eef2f6;
+  text-align: center;
+  padding: 18px;
+  font-size: 14px;
+  color: #555;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 15px;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 40px 20px;
+    text-align: left;
+  }
+}
 
