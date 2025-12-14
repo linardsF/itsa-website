@@ -3,23 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Kontakti | ITSA</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header>
   <div class="header-inner">
     <div class="brand">
-      <img src="images/logo.png" alt="ITSA logo">
-      <div>
-        <h1>Informācijas tehnoloģiju speciālistu arodbiedrība</h1>
-        <p>Par drošu, godīgu un ilgtspējīgu digitālo darba vidi</p>
-      </div>
+      <img src="images/logo.png" alt="Logo">
     </div>
+
     <nav>
       <a href="index.html">Sākums</a>
       <a href="about.html">Par mums</a>
@@ -30,18 +29,50 @@
 </header>
 
 <div class="container">
-  <h2>Sazinies ar mums</h2>
+  <h2>Kontakti</h2>
 
-  <div class="info-box">
-    <p><strong>Adrese:</strong> Rīga, Latvija</p>
-    <p><strong>Tālrunis:</strong> +371 27886624</p>
-    <p><strong>E-pasts:</strong> <a href="mailto:info@biedriem.lv">info@biedriem.lv</a></p>
-  </div>
+  <div class="contact-grid">
 
-  <p>
-    Raksti vai zvani, ja Tev ir jautājumi par dalību arodbiedrībā,
+    <!-- Kreisā puse -->
+    <div class="contact-info">
+      <h3>Sazinies ar mums</h3>
+      <p><strong>Adrese:</strong> Rīga, Latvija</p>
+      <p><strong>Tālrunis:</strong> +371 27886624</p>
+      <p><strong>E-pasts:</strong> <a href="mailto:info@biedriem.lv">info@biedriem.lv</a></p>
+
+      <p class="small">
+        Raksti vai zvani, ja Tev ir jautājumi par dalību arodbiedrībā,
     darba apstākļiem vai savām darba tiesībām.
-  </p>
+      </p>
+    </div>
+
+    <!-- Labā puse -->
+    <div class="form-box">
+      <h3>Raksti mums</h3>
+
+      <form action="mailto:info@biedriem.lv" method="post" enctype="text/plain">
+        <label>Vārds, uzvārds</label>
+        <input type="text" name="Vārds" required>
+
+        <label>E-pasts</label>
+        <input type="email" name="E-pasts" required>
+
+        <label>Tēma</label>
+        <input type="text" name="Tēma">
+
+        <label>Ziņa</label>
+        <textarea name="Ziņa" rows="4"></textarea>
+
+        <button type="submit">Nosūtīt ziņu</button>
+      </form>
+
+      <p class="small">
+        Nosūtot ziņu, Tu piekrīti, ka norādītā kontaktinformācija
+        tiks izmantota atbildes sniegšanai.
+      </p>
+    </div>
+
+  </div>
 </div>
 
 <footer>
